@@ -1,0 +1,332 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --textcolor:#000000;
+    --backgorundcolor:#ffffff;
+    --hovercolor:#ff4f4f;
+    --btnhovercolor:#555555;
+    --mosthovercolor:#000000;
+}
+.hamburger{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    display: none;
+}
+.lines{
+    width: 1.7rem;
+    height: 0.25rem;
+    background-color: var(--textcolor);
+    content: '';
+    margin: 0.25rem;
+    border-radius: 10rem;
+}
+.logo{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--textcolor);
+    letter-spacing: 0.5rem;
+    padding: 1rem 0rem;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.search{
+    display: flex;
+    max-width: 18rem;
+    border: 1.5px solid black;
+    max-height: 2.2rem;
+    margin-left: 3rem;
+}
+.search img{
+    height: 1.7rem;
+    aspect-ratio: 1/1;
+    margin:0.17rem 0 0 0.1rem;
+}
+.search input{
+    padding: 0.3rem 0.2rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.15rem;
+}
+input:focus{
+    outline: none;
+}
+.navlinks{
+    margin-left: 0rem;
+}
+.navlinks ul li {
+    display: inline-block;
+    margin: 0rem 2rem;
+    list-style: none;
+}
+.navlinks ul li a{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.navlinks ul li a:hover {
+    color: var(--hovercolor);
+}
+.profile img ,.bag img{
+    max-height: 1.7rem;
+    aspect-ratio: 1/1;
+}
+.profile{
+    display: flex;
+    padding:  0rem 1.5rem;
+}
+.profile a{
+    text-decoration: none;
+    color: var(--hovercolor);
+    margin: 0rem 1rem;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+@media screen  and (max-width:1024px) {
+
+.logo {
+        font-size: 2.1rem;
+        letter-spacing: 0.5rem;
+        padding: 1rem 0rem;
+    }
+
+    .search {
+        display: flex;
+        max-width: 14rem;
+        border: 1.5px solid black;
+        max-height: 2.2rem;
+        margin-left: 3rem;
+    }
+
+    .search img {
+        height: 1.5rem;
+        aspect-ratio: 1/1;
+    }
+
+    .search input {
+        padding: 0.25rem 0.15rem;
+        border: none;
+        font-size: 0.9rem;
+        margin-left: 0rem;
+    }
+
+    .navlinks ul li {
+        display: inline-block;
+        margin: 0rem 0.8rem;
+        list-style: none;
+    }
+
+    .navlinks ul li a {
+        color: var(--textcolor);
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .profile img,
+    .bag img {
+        max-height: 1.5rem;
+        aspect-ratio: 1/1;
+    }
+
+    .profile {
+        padding: 0rem 1.3rem;
+    }
+
+    .profile a {
+        margin: 0rem 0.8rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        width: 13rem;
+        margin-right: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .logo {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        padding: 1rem 0rem;
+    }
+
+    .search {
+        display: flex;
+        max-width: 10rem;
+        border: 1.5px solid black;
+        max-height: 2rem;
+        margin-left: 3rem;
+    }
+
+    .search img {
+        height: 1.2rem;
+        aspect-ratio: 1/1;
+        margin-top: 0.3rem;
+    }
+
+    .search input {
+        padding: 0.15rem 0 0.15rem 0.2rem;
+        border: none;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    .navlinks ul li {
+        display: inline-block;
+        margin: 0rem 0.8rem;
+        list-style: none;
+    }
+
+    .navlinks ul li a {
+        color: var(--textcolor);
+        text-decoration: none;
+        font-size: 0.5rem;
+    }
+
+    .profile img,
+    .bag img {
+        max-height: 1rem;
+        aspect-ratio: 1/1;
+    }
+
+    .profile {
+        padding: 0rem 1.1rem;
+    }
+
+    .profile a {
+        margin: 0rem 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        width: 13rem;
+        margin-right: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:427px) {
+    .hamburger{
+        display: block;
+    }
+
+    .navbar{
+        height: 2.5rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        padding: 1rem 0rem;
+    }
+
+    .search {
+        display: flex;
+        max-width: 10rem;
+        border: 1.5px solid black;
+        max-height: 2rem;
+        margin-left: 3rem;
+        margin-left: 1.5rem;
+    }
+
+    .search img {
+        height: 1.2rem;
+        aspect-ratio: 1/1;
+        margin-top: 0.3rem;
+    }
+
+    .search input {
+        padding: 0.15rem 0 0.15rem 0.2rem;
+        border: none;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .navlinks ul li a {
+        color: var(--textcolor);
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .profile img,
+    .bag img {
+        max-height: 1.2rem;
+        aspect-ratio: 1/1;
+        position: relative;
+        top: 0.5rem;
+        right: 2rem
+    }
+
+    .profile {
+        padding: 0rem 1.1rem;
+    }
+
+    .profile a {
+        margin: 0rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    .profile-text{
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        width: 13rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .navlinks{
+        background-color: rgba(12, 43, 40,0.6);
+        display: none;
+        width:100%;
+        height: 17rem;
+        z-index: 1;
+        position: absolute;
+        top: 8rem;
+        text-align: center;
+        
+    }
+    .navlinks ul li{
+        display: list-item;
+        margin: 0rem;
+        padding: 0rem;
+        margin: 1.5rem 0rem;
+    }
+    .navlinks ul li a{
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 1rem 0rem;
+        color: white;
+       
+    }
+    .show{
+        display: block;
+    }
+
+
+}

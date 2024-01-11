@@ -1,0 +1,47 @@
+
+.photo{
+    width: 25rem;
+    height: 37rem;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card h1{
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1rem;
+}
+.product-card p{
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+.photo {
+        width: 20rem;
+        height: 32rem;
+        overflow: hidden;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-card h1 {
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+    }
+}

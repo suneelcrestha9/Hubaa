@@ -1,0 +1,852 @@
+:root {
+    --textcolor: #000000;
+    --backgorundcolor: #ffffff;
+    --hovercolor: #ff4f4f;
+    --btnhovercolor: #555555;
+    --mosthovercolor: #000000;
+    --btnwidth:8rem;
+    --btnblackbg:#000000;
+    --btnwhitebg:#ffffff;
+}
+.stayreal-video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-right: 0rem;
+}
+.stayreal-video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.video-text{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 3rem;
+    color: var(--backgorundcolor);
+    text-align: center;
+}
+.video-text h1{
+    margin-bottom: -4rem;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.buttons a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--textcolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    width: var(--btnwidth);
+    padding: 0.7rem 1.3rem;
+    border-radius: 10rem;
+    margin-right: 2rem;
+    border: none;
+}
+.contact-btn button{
+    background-color: var(--btnblackbg);
+}
+.contact-btn button a{
+    color: var(--btnwhitebg);
+}
+.contact-btn button:hover {
+    background-color: var(--backgorundcolor);
+    transition: .3s;
+}
+
+.contact-btn button:hover a {
+    color: var(--btnblackbg)
+}
+
+
+
+.new-btn button:hover {
+    background-color: var(--btnblackbg);
+    transition: .3s;
+}
+
+.new-btn button:hover a {
+    color:var(--backgorundcolor)
+    
+
+}
+
+
+.home-photo{
+    width: 90%;
+    height:65%;
+    overflow: hidden;
+    margin: 4.75rem;
+}
+.home-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo-home{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--textcolor);
+    letter-spacing: 0.5rem;
+    padding: 1rem 0rem;
+}
+.container-made{
+    margin-top: -2rem;
+    text-align: center;
+}
+.container-made h1 {
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 3.8rem;
+}
+.container-made p{
+    font-size: 1.2rem;
+    margin-top: -2rem;
+}
+.collage-photos{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100vh;
+    margin: 10rem 0rem 5rem 5rem;
+}
+.collage-photos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.platform {
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 1.2rem;
+    color: var(--textcolor);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 3rem;
+    margin-right: 7rem;
+}
+.black-box{
+    position: relative;
+    top: -25%;
+    color: var(--btnwhitebg);
+    width: 29rem;
+    height: 30rem;
+    background-color: var(--btnblackbg);
+    align-items: center;
+}
+.black-box-text{
+    margin-top: 6rem;
+}
+.black-box h1 {
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 2.5rem;
+    color: var(--backgorundcolor);
+    text-align: center;
+    margin-bottom: -1.5rem;
+}
+
+.black-button-box {
+    width: 14rem;
+    background-color: white;
+    display: flex;
+    margin: 4rem 0rem 0rem 6rem;
+}
+
+.black-button-box img {
+    height: 2rem;
+    aspect-ratio: 1/1;
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0rem;
+}
+
+.black-box-btn {
+    width: 12rem;
+    border-radius: 0rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: var(--btnhovercolor);
+    padding: 0.8rem;
+    border: 0.1rem solid white;
+    color: var(--btnwhitebg);
+}
+
+.black-box-btn:hover {
+    background-color: var(--btnblackbg);
+    border: 0.1rem solid black;
+    transition: .3s;
+}
+.collage-pic-box-one{
+    width: 25rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+.collage-photos{
+    display: none;
+}
+.collage-pic-box-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* image two of collage-photos */
+.collage-pic-box-two {
+    width: 25rem;
+    height: 20rem;
+    overflow: hidden;
+}
+.collage-pic-box-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* image three of collage-photos */
+.collage-pic-box-three {
+    width: 25rem;
+    height: 43rem;
+    overflow: hidden;
+}
+
+.collage-pic-box-three img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* image four of collage-photos */
+.collage-pic-overlay-box{
+    position: relative;
+}
+.collage-pic-box-four {
+    width: 22rem;
+    height: 30rem;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    
+}
+
+.collage-pic-box-four img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* page stay connected */
+
+.stay-connected{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+}
+.phone-image{
+    width: 75%;
+    height: 75vh;
+    overflow: hidden;
+    margin: auto;
+}
+.phone-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stay-conntected-text{
+    width: 26rem;
+    
+}
+.stay-conntected-text h1{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 2.5rem;
+    color: var(--textcolor);
+    margin-bottom: -1.5rem;
+}
+.stay-conntected-text p{
+    font-size: 1rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;  
+    margin-top: 2rem;
+}
+.social-media-title{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    margin-bottom: -1.5rem;  
+}
+.socail-media-icons{
+    display: flex;
+    margin-top: 2rem;
+}
+.socail-media-icons img{
+    width: 1.8rem;
+    aspect-ratio: 1/1;
+    margin: 0.9rem;
+}
+.socail-media-icons .fb{
+    width: 2.2rem;
+    aspect-ratio: 1/1;
+    margin-left: -0.1rem;
+}
+.socail-media-icons img:hover {
+    filter: drop-shadow(2px 2px 10px black);
+}
+.line {
+    content: " ";
+    background-color: black;
+    width: 70%;
+    height: 0.01rem;
+    justify-content: center;
+    margin-left: 13rem;
+    margin-top: 2rem;
+}
+.home-product-page {
+    width: 90%;
+    margin: 5rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+}
+.product-content{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+.product-left-content h1{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 2.3rem;
+    color: var(--textcolor);
+    margin-bottom: -1.5rem;
+    margin-left: 5rem;
+}
+.product-right-content p {
+    font-size: 1rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;  
+    margin-right: 7rem;
+    margin-top: -0.5rem;
+}
+.product-btn-box{
+    width: 18rem;
+}
+.product-btn{
+    width: 10rem;
+    border-radius: 0rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: var(--backgorundcolor);
+    padding: 0.8rem;
+    border: 0.1rem solid black;
+    color: var(--btnblackbg);
+    position: relative;
+    transition: .3s;
+}
+.product-btn:hover{
+    background-color: var(--btnblackbg);
+    color: var(--btnwhitebg);
+}
+.Category-main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 3rem 0rem 5rem 5rem;
+}
+.category-left{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+}
+.category-subbox{
+    margin-top: 15rem;
+}
+.category-right h1{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 2.3rem;
+    color: var(--textcolor);
+    margin-bottom: -1.5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+.category-right p {
+    font-size: 1rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+.services{
+    margin: 13rem 0rem 5rem;
+}
+.services h1{
+    font-family: "arial black", arial-w01-black, arial-w02-black, "arial-w10 black", sans-serif;
+    font-size: 3rem;
+    color: var(--textcolor);
+    margin-right: 5rem;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+.services p {
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.aboutus-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem 5rem;   
+}
+.aboutus-box h1{
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+.video-text {
+        position: absolute;
+        top: 75%;
+        left: 7%;
+        font-size: 2.3rem;
+    }
+    .buttons a {
+        font-size: 0.9rem;
+    }
+    .container-made p{
+        font-size: 1.1rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
+    }
+    .collage-photos {
+        width: 95%;
+        height: 100vh;
+        margin: 7rem 0rem 5rem 5rem;
+    }
+    .platform {
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        margin-right: 7rem;
+    }
+    .black-box {
+        top: -15%;
+        width: 19rem;
+        height: 25rem;
+    }
+
+    .black-box h1 {
+        font-size: 2.2rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .black-button-box {
+        width: 10rem;
+        margin: 3rem 0rem 0rem 4rem;
+    }
+
+    .black-button-box img {
+        height: 1.5rem;
+        aspect-ratio: 1/1;
+        margin: 0.5rem 0.5rem 0 0;
+        padding: 0rem;
+    }
+    .black-box-btn {
+        width: 8rem;
+        border-radius: 0rem;
+        font-size: 0.8rem;
+    }
+    .collage-pic-box-one{
+        width: 17rem;
+        height: 14rem;
+        overflow: hidden;
+        margin-top: 8.5rem;
+    }
+    .collage-pic-box-two{
+        width: 17rem;
+        height: 14rem;
+        overflow: hidden;
+    }
+    .collage-pic-box-three {
+        width: 18rem;
+        height: 33rem;
+        overflow: hidden;
+        margin-top: 6rem;
+    }
+    .collage-pic-box-four {
+        width: 15rem;
+        height: 20rem;
+        top: 30%;
+        left: 30%;
+    }
+
+    .product-left-content h1 {
+        font-size: 2.1rem;
+    }
+    .product-right-content p {
+        font-size: 0.9rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        margin-right: 7rem;
+        margin-top: 1.3rem;
+    }
+    .product-btn {
+        width: 8rem;
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+    .Category-main {
+        grid-template-columns: 70% 30%;
+    }
+
+    .category-left {
+        column-gap: 2.5rem;
+    }
+
+    .category-subbox {
+        margin-top: 5rem;
+    }
+    .category-right h1 {
+        font-size: 2.1rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .category-right p {
+        font-size: 0.8rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        margin:4rem 0;
+        text-align: start;
+       
+    }
+    .services h1 {
+        font-size: 2.7rem;
+        margin-left: 7rem;
+    }
+    .services p {
+        font-size: 0.9rem;
+    }
+    .aboutus-box {
+        row-gap: 6rem;
+    }
+    .aboutus-box h1 {
+        font-size: 1.5rem;
+    }
+    .aboutus-box p {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+    .video-text {
+        position: absolute;
+        top: 85%;
+        left: 7%;
+        font-size: 1.7rem;
+    }
+    button {
+        padding: 0.5rem 1rem;
+    }
+    .buttons a {
+        font-size: 0.6rem;
+    }
+    .home-photo {
+        width: 80%;
+    }
+    .container-made p {
+        font-size: 0.9rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
+    }
+
+    .collage-photos {
+        width: 95%;
+        height: 100vh;
+        margin: 7rem 0rem 5rem 5rem;
+    }
+
+    .platform {
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        margin-right: 7rem;
+    }
+
+    .black-box {
+        top: -22%;
+        width: 13rem;
+        height: 20rem;
+    }
+
+    .black-box h1 {
+        font-size: 1.5rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .black-button-box {
+        width: 8rem;
+        display: block;
+        margin-left: 2rem;
+
+    }
+
+    .black-button-box img {
+        height: 1rem;
+        aspect-ratio: 1/1;
+        margin: 1.4rem 0.5rem 0 0;
+        padding: 0rem;
+        display: none;
+    }
+
+    .black-box-btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+    .collage-pic-box-one {
+        width: 12rem;
+        height: 11.5rem;
+        margin-top: 10rem;
+        margin-left: -1.5rem;
+    }
+
+    .collage-pic-box-two {
+        width: 12rem;
+        height: 11.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .collage-pic-box-three {
+        width: 15rem;
+        height: 27rem;
+        overflow: hidden;
+        margin-top: 8rem;
+    }
+
+    .collage-pic-box-four {
+        width: 13rem;
+        height: 17rem;
+        top: 30%;
+        left: 20%;
+    }
+    .phone-image {
+        width: 100%;
+        height: 75vh;
+        overflow: hidden;
+        margin: auto;
+    }
+    .stay-conntected-text {
+        width: 20rem;
+
+    }
+    .line{
+        margin-left: 8rem;
+    }
+
+    .product-left-content h1 {
+        font-size: 2rem;
+    }
+
+    .product-right-content p {
+        font-size: 0.8rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        margin-right: 7rem;
+        margin-top: 1.3rem;
+    }
+    .home-product-page{
+        margin-left: 2.5rem;
+    }
+
+    .product-btn {
+        width: 7rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .Category-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .category-left{
+        margin-left: -2.4rem;
+    }
+
+    .services h1 {
+        font-size: 2.6rem;
+        margin-left: 7rem;
+    }
+
+    .services p {
+        font-size: 0.8rem;
+    }
+
+    .aboutus-box {
+        row-gap: 5rem;
+    }
+
+    .aboutus-box h1 {
+        font-size: 1.3rem;
+    }
+
+    .aboutus-box p {
+        font-size: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:426px) {
+
+
+    .video-text {
+        position: absolute;
+        top: 80%;
+        left: 7%;
+        font-size: 1.4rem;
+    }
+    .video-text h1{
+        margin: 0rem;
+    }
+    .buttons{
+        margin-top: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+
+    .buttons a {
+        font-size: 0.6rem;
+    }
+
+    .home-photo {
+        width: 84%;
+        height: 35rem;
+        margin: 3rem 2rem
+    }
+    .container-made h1{
+        font-size: 2.5rem;
+    }
+
+    .container-made p {
+        font-size: 0.7rem;
+        margin-top: -1rem;
+        margin-left: -1rem;
+    }
+    .line{
+        display: none;
+    }
+    .collage-photos {
+        display: none;
+    }
+    .phone-image {
+        width: 22rem;
+        height: 75vh;
+        margin-left: -2rem;
+    }
+    .phone-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .stay-connected{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 2.5rem;
+    }
+    .stay-conntectd-rightside{
+        margin-bottom: 5rem;
+    }
+    .line {
+        margin-left: 8rem;
+    }
+    .container-made,.logo-home{
+        margin-left: 2rem;
+    }
+    .socail-media-icons{
+        margin-left: 5rem;
+    }
+    .product-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0rem;
+    }
+
+    .product-right-content {
+        margin:2rem 0rem 2rem 5rem;
+        width: 18rem;
+    }
+    .product-left-content {
+       text-align: center;
+       margin-left: -5rem;
+    }
+    .Category-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .category-left {
+        margin-left: 0.25rem;
+    }
+    .category{
+        margin-bottom: 2rem;
+    }
+    .category-right{
+        margin-left: 1rem;
+    }
+    .category-right h1{
+        margin-left: 3rem;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-left: 7rem;
+    }
+
+    .services p {
+        font-size: 0.6rem;
+        margin: 0rem 2rem;
+    }
+
+    .aboutus-box {
+        row-gap: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

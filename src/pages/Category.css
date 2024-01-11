@@ -1,0 +1,92 @@
+:root {
+    --textcolor: #000000;
+    --backgorundcolor: #ffffff;
+    --hovercolor: #ff4f4f;
+    --btnhovercolor: #555555;
+    --mosthovercolor: #000000;
+    --btnwidth: 8rem;
+    --btnblackbg: #000000;
+    --btnwhitebg: #ffffff;
+}
+.Category-box{
+    width: 23rem;
+    height: 70rem;
+}
+.Category-photo{
+    width: 23rem;
+    height: 67rem;
+    overflow: hidden;
+}
+.Category-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Category-type{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-btn button{
+    color: var(--btnwhitebg);
+    background-color: var(--btnblackbg);
+    width: 7.5rem;
+    font-size: 1rem;
+    border-radius: 0rem;
+    transition: .3s;
+    border: 0.01rem solid black;
+    margin-right: 0rem;
+}
+.category-btn button:hover {
+    color: var(--btnblackbg);
+    background-color: var(--backgorundcolor);
+    
+}
+.Category-type{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+@media screen  and (max-width:1024px){
+    .Category-box {
+        width: 16rem;
+        height: 43rem;
+    }
+
+    .Category-photo {
+        width: 16rem;
+        height: 40rem;
+        overflow: hidden;
+    }
+    .category-btn button {
+        width: 6.5rem;
+        font-size: 0.8rem;
+
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .Category-box {
+        width: 20rem;
+        height: 47rem;
+    }
+
+    .Category-photo {
+        width: 20rem;
+        height: 45rem;
+        overflow: hidden;
+    }
+
+    .category-btn button {
+        width: 6.5rem;
+        font-size: 0.8rem;
+
+    }
+}
